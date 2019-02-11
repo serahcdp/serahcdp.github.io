@@ -21,8 +21,30 @@ html {
 
 header {
     background-color: #0e89d5;
+    display: inline-block;
+    width: 100%;
 }
- 
+
+#heading h2 {
+  font-size: 3em;
+  margin: 1.5px 0 0 auto;
+}
+
+#heading p {
+  margin: 2px 0 0 auto;
+}
+
+
+
+
+
+#logo {
+  float: left;
+  max-width: 90px;
+  }
+
+
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Sansita', sans-serif;
 }
@@ -52,13 +74,19 @@ body{
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: #0e89d5;
   }
 
   footer{
     margin-bottom: 2em;
    }
 
-   #site-brand {
+   #site {
     font-size: 2em;
     font-weight: 600;
   }
+  #copyright {
+    background-color: #0e89d5;
+  }
+  
+  
