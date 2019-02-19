@@ -35,9 +35,15 @@ header {
 }
 
 #rain img{
+width: 50%;
  max-width: 100%;
-}
+ }
 
+
+#page-header
+{
+  display:flex;
+}
 
 #logo {
   float: left;
@@ -55,6 +61,15 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+#high {
+  color: red;
+  display: inline;
+}
+
+#low {
+  color: blue;
+  display: inline;
+}
 
 /*Section 3 - Mobile First Rules*/
 
@@ -65,18 +80,50 @@ body{
     border-radius: 15px;
   }
 
+  body {
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+
+nav a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
 
   nav ul li { 
     display: inline-block; 
     list-style: none; 
   }
 
+  li, ol, ul {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+    header h1 {
+      display: inline;
+  } 
+
   nav {
+    background-color: #0e89d5;
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: #0e89d5;
+    width: 100%;
+    
   }
+
+  nav li a {
+    display: block;
+    width: 70px;
+    padding: 16px;
+    float: left;
+}
 
   footer{
     margin-bottom: 2em;
@@ -90,4 +137,22 @@ body{
     background-color: #0e89d5;
   }
   
+  @media only screen and (max-width: 699px) {
+
+  }
   
+  /*Larger screen rules*/
+
+  @media only screen and (min-width: 700px) {
+
+    nav {
+        position: relative;
+    
+    }
+    
+    #weather-info {
+    
+      display:flex;
+      justify-content: center;
+  
+  }
