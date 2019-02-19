@@ -10,34 +10,34 @@
 </head>
 
 <body>
-  <header id="header">
+  <header id="page-header">
     <img id="logo" src="images/logo.jpg" alt="logo">
     <h1 id="site">The Weather Site</h1>
   </header>
     
-    <nav>
+    <nav id="page-nav">
     <a href="#">Current</a>
     <a href="#">Search</a>
     <a href="#">Franklin</a>
     <a href="#">Greenville</a>
   </nav>
 
-  <main>
-    
-    <section id="heading">
+  <main id="page-main">
+     <section id="heading">
       <h2>Franklin, Idaho</h2>
       <p><strong>Zip: </strong>83237 | <strong>Elevation: </strong>1514.246 ft. | <strong>Location: </strong>42.07&#176; N, 111.97&#176; W</p>
-    </section>
+     </section>
 
+     <div id="weather-info">
     
       <section id="temp" class="tile">
         <h2>Tempurature</h2>
         <h3>40&deg;</h3>
-        <p>
-          <span id="high">64&deg;F</span>
-          <span id="low">41&deg;F</span>
-          <span id="feels">Feels like 40&deg;F</span>
-        </p>
+        <ul>
+          <li><span id="high">64&deg;F</span></li>
+          <li><span id="low">41&deg;F</span></li>
+         <li><span id="feels">Feels like 40&deg;F</span</li> >
+        </ul>
       </section>
 
       <section id="wind" class="tile">
@@ -49,19 +49,33 @@
       </section>
 
       <section id="rain" class="tile">
-        <h2>Rain</h2>
+        <h2><span id="conditionWeather">Rain</h2>
         <img id="rainy-weather" src="images/rain.jpg" alt="Rainy weather">
          </section>
+</div>
+         <section id="forecast" class="tile">
+          <h2>Hourly Forecast</h2>
+          <ol>
+            <li>10am: 41&deg;F</li>
+            <li>11am: 41&deg;F</li>
+            <li>12pm: 41&deg;F</li>
+            <li>1pm: 41&deg;F</li>
+            <li>2pm: 41&deg;F</li>
+            <li>3pm: 41&deg;F</li>
+            <li>4pm: 42&deg;F</li>
+            <li>5pm: 44&deg;F</li>
+            <li>6pm: 44&deg;F</li>
+            <li>7pm: 46&deg;F</li>
+            <li>8pm: 49&deg;F</li>
+            <li>9pm: 51&deg;F</li>
+            <li>10pm: 55&deg;F</li>
+        </ol>
+        </section>
+
      </main>
  
      <footer>
-    <section id="forecast" class="tile">
-      <h2>Hourly Forecast</h2>
-      <p>
-        10am: 41&deg;F | 11am: 41&deg;F | 12pm: 41&deg;F | 1pm: 41&deg;F | 2pm: 41&deg;F | 3pm: 41&deg;F | 4pm:
-        42&deg;F | 5pm: 44&deg;F | 6pm: 44&deg;F | 7pm: 46&deg;F | 8pm: 49&deg;F | 9pm: 51&deg;F | 10pm: 55&deg;F
-      </p>
-    </section>
+    
     <p id="copyright">&copy; 2019 &mdash; The Weather Site</p>
   </footer>
 </body>
