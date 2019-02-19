@@ -34,11 +34,9 @@ header {
   margin: 2px 0 0 auto;
 }
 
-#rain
-{
-  width:100%;
+#rain img{
+ max-width: 100%;
 }
-
 
 
 #logo {
