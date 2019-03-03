@@ -12,17 +12,19 @@
 
 /*Section 2 - General Rules*/
 html {
-    box-sizing: border-box;
-   }
-   
-   *, *:before, *:after{
-    box-sizing: inherit;
-   }
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 header {
-    background-color: #0e89d5;
-    display: inline-block;
-    width: 100%;
+  background-color: #0e89d5;
+  display: inline-block;
+  width: 100%;
 }
 
 #heading h2 {
@@ -34,31 +36,35 @@ header {
   margin: 2px 0 0 auto;
 }
 
-#rain img{
-width: 50%;
- max-width: 100%;
- }
+#summary img {
+  width: 50%;
+  max-width: 100%;
+}
 
 
-#page-header
-{
-  display:flex;
+#page-header {
+  display: flex;
 }
 
 #logo {
   float: left;
   max-width: 90px;
-  }
-
-
-
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Sansita', sans-serif;
 }
 
-body{
-    font-size: 18px;
-    font-family: Helvetica, Arial, sans-serif;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sansita', sans-serif;
+}
+
+body {
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #high {
@@ -71,20 +77,15 @@ body{
   display: inline;
 }
 
+
 /*Section 3 - Mobile First Rules*/
 
-.tile{
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-  }
 
-  body {
-    font-size: 18px;
-    font-family: Helvetica, Arial, sans-serif;
-    width: 100%;
-    height: auto;
+body {
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -93,66 +94,220 @@ nav a:link {
   text-decoration: none;
 }
 
-  nav ul li { 
-    display: inline-block; 
-    list-style: none; 
-  }
-
-  li, ol, ul {
-    list-style: none;
-    display: inline;
-    margin: 0;
-    padding: 0;
-  }
-
-    header h1 {
-      display: inline;
-  } 
-
-  nav {
-    background-color: #0e89d5;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    
-  }
-
-  nav li a {
-    display: block;
-    width: 70px;
-    padding: 16px;
-    float: left;
+nav ul li {
+  display: inline-block;
+  list-style: none;
 }
 
-  footer{
-    margin-bottom: 2em;
-   }
+li,
+ol,
+ul {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
 
-   #site {
-    font-size: 2em;
-    font-weight: 600;
+header h1 {
+  display: inline;
+}
+
+nav {
+  background-color: #0e89d5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+nav li a {
+  display: block;
+  width: 70px;
+  padding: 16px;
+  float: left;
+}
+
+footer {
+  margin-bottom: 2em;
+}
+
+#site {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#copyright {
+  background-color: #0e89d5;
+}
+
+#dial {
+  height: 150px;
+  width: 150px;
+  background: no-repeat center/85% url('../images/wind-pointer.png');
+  z-index: 100;
+  margin: -.6em auto 0;
+  transform: rotate(270deg);
+}
+
+#dial.n {
+  transform: rotate(0deg);
+}
+
+#dial.ne {
+  transform: rotate(45deg);
+}
+
+#dial.nne {
+  transform: rotate(22.5deg);
+}
+
+#dial.ene {
+  transform: rotate(67.5deg);
+}
+
+#dial.nw {
+  transform: rotate(315.5deg);
+}
+
+#dial.nnw {
+  transform: rotate(337.5deg);
+}
+
+#dial.wnw {
+  transform: rotate(292.5deg);
+}
+
+#dial.s {
+  transform: rotate(180deg);
+}
+
+#dial.se {
+  transform: rotate(135deg);
+}
+
+#dial.sse {
+  transform: rotate(157.5deg);
+}
+
+#dial.ese {
+  transform: rotate(112.5deg);
+}
+
+#dial.sw {
+  transform: rotate(225deg);
+}
+
+#dial.ssw {
+  transform: rotate(202.5deg);
+}
+
+#dial.wsw {
+  transform: rotate(247.5deg);
+}
+
+#dial.e {
+  transform: rotate(90deg);
+}
+
+#dial.w {
+  transform: rotate(270deg);
+}
+
+#weather-info {
+  background-size: cover;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#weather-info section {
+  width: 90%;
+  background-color: rgba(200, 200, 200, .6);
+  margin: .2em auto;
+  border: 1px solid;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+.tile{
+  width: 90%;
+  background-color: rgba(200, 200, 200, .6);
+  margin: .2em auto;
+  border: 1px solid;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#speed {
+  font-size: 1em;
+  margin-top: -5em;
+  margin-bottom: 5em;
+}
+/* Background pictures for summary */
+.clear {
+  background-image: url("../../responsive_images/clear_300.jpg");
+}
+
+.clouds {
+  background-image: url("../../responsive_images/clouds_300.jpg");
+}
+
+.fog {
+  background-image: url("../../responsive_images/fog_300.jpg");
+}
+
+.rain {
+  background-image: url("../../responsive_images/rain_300.jpg");
+}
+
+.snow {
+  background-image: url("../../responsive_images/snow_300.jpg");
+}
+
+
+
+
+@media only screen and (max-width: 500px) {}
+
+/*Larger screen rules*/
+
+@media only screen and (min-width: 700px) {
+
+  /* Background pictures for summary */
+  .clear {
+    background-image: url("../../responsive_images/clear_300.jpg");
   }
-  #copyright {
-    background-color: #0e89d5;
+
+  .clouds {
+    background-image: url("../../responsive_images/clouds_300.jpg");
   }
-  
-  @media only screen and (max-width: 699px) {
+
+  .fog {
+    background-image: url("../../responsive_images/fog_300.jpg");
+  }
+
+  .rain {
+    background-image: url("../../responsive_images/rain_300.jpg");
+  }
+
+  .snow {
+    background-image: url("../../responsive_images/snow_300.jpg");
+  }
+
+  #weather-info section {
+    width: 32%;
+  }
+
+  nav {
+    position: relative;
 
   }
-  
-  /*Larger screen rules*/
 
-  @media only screen and (min-width: 700px) {
+  #weather-info {
 
-    nav {
-        position: relative;
-    
-    }
-    
-    #weather-info {
-    
-      display:flex;
-      justify-content: center;
-  
+    display: flex;
+    justify-content: center;
+
   }
+}
