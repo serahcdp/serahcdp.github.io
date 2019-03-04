@@ -6,7 +6,7 @@
 // Variables for Function Use
 const temp = 31;
 const speed = 5;
-const direction = "se"; //Set your own value
+const direction = "n"; //Set your own value
 const condition = "Clear";
 const meters = 145;
 
@@ -142,7 +142,7 @@ function changeSummaryImage(keyword) {
             break;
     }
 }
-
+//convert elevation
 function convertMeters(meters) {
     const feet = meters * 3.28;
     document.getElementById("feet").innerHTML = Math.round(feet)
