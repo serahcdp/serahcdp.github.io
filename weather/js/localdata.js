@@ -61,6 +61,6 @@ function fetchData(weatherURL) {
         // If there is an error
         .catch(function (error) {
             console.log('There was a fetch problem: ', error.message);
-            //statusContainer.innerHTML = 'Sorry, the data could not be processed.';
+            statusContainer.innerHTML = 'Sorry, the data could not be processed.';
         })
 }
