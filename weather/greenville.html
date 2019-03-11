@@ -23,8 +23,8 @@
   </nav>
   
   <main id="page-content" class="hide">
-    <main id= "locName">
-    <main id="page-main">
+    <section id="status">Please be patient while I get your weather infromation.</section>
+
       <section id="heading">
         <h2>Franklin, Idaho</h2>
         <p><strong>Zip: </strong>83237 | <strong>Elevation: </strong><span id="feet">1514.246</span> ft. | <strong>Location:
@@ -34,7 +34,7 @@
 
       <div id="weather-info">
 
-        <section id="temp" class="">
+        <section id="temp" class="tile">
           <h2>Tempurature</h2>
           <h3><span id="currentTemp">40</span>&deg;</h3>
           <ul>
@@ -44,7 +44,7 @@
           </ul>
         </section>
 
-        <section id="wind" class="n">
+        <section id="wind" class="tile">
           <h2>Wind</h2>
           <!-- <img src="images/wind-pointer.png" alt="Wind pointer"> -->
           <div id="dial" class="w"></div>
@@ -53,7 +53,7 @@
           <p><strong>Gusts: </strong>10-12</p>
         </section>
 
-        <section id="summary" class="">
+        <section id="summary" class="tile">
           <h2><span id="summary-heading">Rain</span></h2>
           <div>
             <img id="image-weather" src="images/raindrop.jpg" alt="Rainy weather">
@@ -80,16 +80,16 @@
         </ol>
       </section>
 
-    </main>
-  </main>
+   
 </main>
   <footer>
 
     <p id="copyright">&copy; 2019 &mdash; The Weather Site</p>
   </footer>
 
-  <script src="js/functions.js"></script>
+ 
   <script src="js/localdata.js"></script>
+  <script src="js/functions.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,15 @@ html {
   box-sizing: border-box;
 }
 
+
+
+#temp > h1 {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
 *,
 *:before,
 *:after {
