@@ -37,8 +37,6 @@ function buildWC(speed, temp) {
 }
 // Wind Dial Function
 function windDial(direction) {
-
-}
 // Get the wind dial container
 const dial = document.getElementById("dial");
 
@@ -81,6 +79,8 @@ switch (direction) {
         dial.setAttribute("class", "w");
         break;
 }
+}
+
 
 function getCondition(condition) {
     console.log(condition);

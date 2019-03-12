@@ -1,15 +1,15 @@
 // Add 'use strict' directive at the top of the new file
 'use strict';
 
-let pageNav = document.getElementById('page-nav');
-let statusContainer = document.getElementById('status');
-let contentContainer = document.getElementById('page-content');
+ let pageNav = document.getElementById('page-nav');
+ let statusContainer = document.getElementById('status');
+ let contentContainer = document.getElementById('page-content');
 
 
 // fetch function
 
 
-let weatherURL = "/weather/js/weather.json";
+let weatherURL = "../weather/js/weather.json";
 fetchData(weatherURL);
 function fetchData(weatherURL){
     let cityName = 'Greenville'; 
@@ -44,7 +44,7 @@ function fetchData(weatherURL){
             // hourly data
             let locHourly = g.Hourly;
 
-            let pageTitle = document.getElementById('page-title');
+            // let pageTitle = document.getElementById('page-title');
             
             let fullNameNode = document.createTextNode(fullName);
             pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
@@ -54,19 +54,23 @@ function fetchData(weatherURL){
             // set the location info
 
             // get the h1 to display the city location
-            let contentHeading = document.getElementById('locName');
+            // let contentHeading = document.getElementById('locName');
             contentHeading.innerHTML = fullName;
 
             // temp info
-            document.getElementById('curtemp1').innerHTML = locTemp;
+            // document.getElementById('curtemp1').innerHTML = locTemp;
+            //buildWC()
 
             // wind info
-            document.getElementById('speednum').innerHTML = locWind;
+            // document.getElementById('speednum').innerHTML = locWind;
             console.log('speednum ', + locWind);
+            windDial(g.Direction);
+            console.log("direction: "+g.Direction);
 
             // current conditions info
-            document.getElementById('summary-heading').innerHTML = locSummary;
+            // document.getElementById('summary-heading').innerHTML = locSummary;
             console.log('summary-heading: ' + locSummary);
+            getCondition(locSummary);
 
             // hourly temp info
             // document.getElementById('hourTemp').innerHTML = locHourly;
