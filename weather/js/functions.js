@@ -7,7 +7,7 @@
 const temp = 31;
 const speed = 5;
 const direction = "N"; //Set your own value
-const condition = "Rainy";
+const condition = "rainy";
 const meters = 145;
 
 // Get the next hour based on the current time
