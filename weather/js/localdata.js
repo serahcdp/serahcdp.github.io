@@ -37,7 +37,7 @@ function fetchData(weatherURL){
             let locTemp = g.Temp;
             // Wind Data
             let locWind = g.Wind;
-
+            console.log('WIND ', + locWind);
             // Current conditions
             let locSummary = g.Summary;
 
