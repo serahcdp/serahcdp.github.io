@@ -41,6 +41,17 @@ function fetchData(weatherURL){
             // Current conditions
             let locSummary = g.Summary;
 
+            //Elevation
+            let elevation = g.Elevation;
+            document.getElementById('feet').innerHTML = elevation;
+
+            //Location (Longitude and latitude)
+            let long = g.Longitude;
+            let lat = g.Latitude;
+
+            document.getElementById('longitude').innerHTML = long;
+            
+            document.getElementById('latitude').innerHTML = lat;
             // hourly data
             let locHourly = g.Hourly;
 
