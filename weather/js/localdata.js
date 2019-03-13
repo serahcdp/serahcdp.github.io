@@ -58,6 +58,10 @@ function fetchData(weatherURL) {
             let gusts = g.Gusts;
             document.getElementById('gus').innerHTML = gusts;
 
+              //Zip
+              let elevation = g.Zip;
+              document.getElementById('zip').innerHTML = zip;
+
 
 
 
