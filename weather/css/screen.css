@@ -15,7 +15,9 @@ html {
   box-sizing: border-box;
 }
 
-
+.hide{
+  display: none;
+}
 
 #temp > h1 {
   text-align: center;
