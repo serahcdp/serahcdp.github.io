@@ -62,6 +62,17 @@ function fetchData(weatherURL) {
               let zip = g.Zip;
               document.getElementById('zip').innerHTML = zip;
 
+               //Location (Longitude and latitude)
+            let low = g.low;
+            let high = g.high;
+            let temp =g.temp;
+
+            document.getElementById('low').innerHTML = long;
+
+            document.getElementById('high').innerHTML = lat;
+
+            document.getElementById('curtemp1').innerHTML = lat;
+
 
 
 
