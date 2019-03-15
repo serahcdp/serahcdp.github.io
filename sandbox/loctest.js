@@ -3,7 +3,8 @@
 
 'use strict';
 
-
+// Setup localStorage
+ var storage = window.localStorage;
 // Set global variable for custom header required by NWS API
 var idHeader = {
     headers: {
@@ -65,7 +66,7 @@ function getLocation(locale) {
       // URL for station list is in the data object 
       let stationsURL = data.properties.observationStations; 
       // Call the function to get the list of weather stations
-      //getStationId(stationsURL); 
+      getStationId(stationsURL); 
      }) 
     .catch(error => console.log('There was a getLocation error: ', error)) 
    } // end getLocation function
@@ -101,3 +102,32 @@ function getStationId(stationsURL) {
      }) 
     .catch(error => console.log('There was a getStationId error: ', error)) 
    } // end getStationId function
+
+
+
+
+   // Gets current weather information for a specific weather station from the NWS API
+function getWeather(stationId) { 
+    // This is the URL for current observation data 
+    const URL = 'https://api.weather.gov/stations/' + stationId + '/observations/latest';
+    // NWS User-Agent header (built above) will be the second parameter 
+    fetch(URL, idHeader) 
+    .then(function(response){
+      if(response.ok){ 
+       return response.json(); 
+      } 
+      throw new ERROR('Response not OK.');
+    })
+    .then(function (data) { 
+      // Let's see what we got back
+      console.log('From getWeather function:'); 
+      console.log(data);
+    
+      // Store weather information to localStorage 
+   
+   
+      // Build the page for viewing 
+      
+     }) 
+    .catch(error => console.log('There was a getWeather error: ', error)) 
+   } // end getWeather function
