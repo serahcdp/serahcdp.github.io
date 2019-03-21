@@ -25,16 +25,16 @@
     <main id="page-content" class="hide">
         <h1 id="locName">Greenville, SC</h1>
         <section>
-            <p><b>Zip:</b> <span id= zip> </span>| <b>Elevation:</b> <span id="feet">1514.246</span> ft.|
+            <p><b>Zip:</b> <span id= zip> 28025 </span>| <b>Elevation:</b> <span id="feet">1514.246</span> ft.|
                 <b>Location:</b> <span id="longitude">42.07</span>&deg; N, <span id="latitude">111.79</span>&deg; W</p>
         </section>
         <div id="weather-info" class="sunny">
             <section id="temps" class="tile">
                 <h2>Temperature</h2>
-                <p id="curtemp"><span id="curtemp1">40</span>&deg;F</p>
+                <p id="curtemp"><span id="temperature">40</span>&deg;F</p>
                 <ul id="highandlow">
-                    <li id="high">72&deg;F </li>
-                    <li id="low">51&deg;F</li>
+                    <li id="high"><span id="hTemp">72</span>&deg;F </li>
+                    <li id="low"><span id="lTemp">51</span>&deg;F</li>
                 </ul>
                 <p>Feels Like <span id="feelTemp">25</span>&deg;F</p>
             </section>
@@ -42,9 +42,9 @@
               <h2>Wind</h2>
               <!-- <img src="images/wind-pointer.png" alt="Wind pointer"> -->
               <div id="dial" class="w"></div>
-              <p id= speed><span id="speednum">5</span> mph</p>
-              <p><strong>Direction: </strong>SW</p>
-              <p><strong>Gusts:</strong> <span id=gus></span></p>
+              <p id= speed><span id="windSpeed">5</span></p>
+              <p><strong>Direction: </strong><span id="windDirection">SW</span></p>
+              <p><strong>Gusts: 10-12</strong> <span id=gus></span></p>
             </section>
             <section id="summary" class="tile">
                 <h2 id="summary-heading">Rainy</h2>
@@ -55,7 +55,7 @@
         <section id="hourly" class="tile">
             <h2>Hourly Forecast</h2>
             <ol id="hourlyNumbers">
-                <li>10am: 41&deg;F</li>
+                <!-- <li>10am: 41&deg;F</li>
                 <li> | 11am: 41&deg;F</li>
                 <li> | 12pm: 41&deg;F</li>
                 <li> | 1pm: 41&deg;F</li>
@@ -66,15 +66,19 @@
                 <li> | 6pm: 46&deg;F</li>
                 <li> | 7pm: 49&deg;F</li>
                 <li> | 8pm: 51&deg;F</li>
-                <li> | 9pm: 55&deg;F</li>
+                <li> | 9pm: 55&deg;F</li> -->
             </ol>
         </section>
     </main>
     <footer>
         &copy; 2019, The Weather Site
     </footer>
+    
+    <script src="js/functions.js"></script> <br>
+    <script src="js/geo_loc.js"></script> <br>
+    
    
-    <script src="js/localdata.js"></script>
-    <script src="js/functions.js"></script>
+
 </body>
+
 </html>
