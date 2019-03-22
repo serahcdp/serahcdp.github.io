@@ -254,6 +254,9 @@ function getLocation(locale) {
             getStationId(stationsURL);
             getHourly();
             getWeather(forecasturl);
+
+            let forecastURL = data.properties.forecast;
+            getForecast(forecastURL);
         })
         .catch(error => console.log('There was a getLocation error: ', error))
 } // end getLocation function
@@ -397,13 +400,35 @@ function getHourly() {
 
 }
 
+function getForecast(forecastURL){
+    fetch(forecastURL, idHeader )
+        .then(function (response) {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new ERROR('Response not OK.');
+        })
+        .then(function (data) {
+            // Let's see what we got back
+            console.log('From getForecast');
+            console.log(data);
+
+            let high= data.properties.periods[0].temperature;
+            let low= data.properties.periods[1].temperature;
+            
+            storage.setItem("high", high);
+            storage.setItem("low", low);
+            
+
+        })
+}
 
 // Populate the current location weather page
 function buildPage() {
     console.log("FUNTION BUILDPage");
     // Task 1 - Feed data to WC, Dial, Image, Meters to feet and hourly temps functions
     let temp = storage.getItem("temperature");
-    let speed = storage.getItem("speed");
+    let speed = storage.getItem("windSpeed");
     let elevation =  storage.getItem("elevation");
     let locName = storage.getItem("locName");
     let locState = storage.getItem("locState");
@@ -411,11 +436,13 @@ function buildPage() {
     let latitude= storage.getItem("location2");
     let temperature= storage.getItem("temperature");
     let windDirection = storage.getItem("windDirection");
+    let high = storage.getItem("high");
+    let low = storage.getItem("low");
 
     let direction = storage.getItem("direction");
     windDial(direction);
 
-    let wc = buildWC(speed, temp);
+    //let wc = buildWC(speed, temp);
     
     let condition = storage.getItem("description");
     const keyword = getCondition(condition);
@@ -432,11 +459,14 @@ function buildPage() {
     document.getElementById("longitude").innerHTML = longitude;
     document.getElementById("latitude").innerHTML = latitude;
     document.getElementById("temperature").innerHTML = temperature;
-    document.getElementById("feelTemp").innerHTML = wc;
+   // document.getElementById("feelTemp").innerHTML = wc;
     document.getElementById("windSpeed"). innerHTML = speed;
     document.getElementById("windDirection").innerHTML = windDirection;
     document.getElementById("summary-heading").innerHTML = condition;
     document.getElementById("image-weather").src = icon;
+    document.getElementById("feelTemp").innerHTML = buildWC(speed, temperature);
+    document.getElementById("hTemp").innerHTML = high;
+    document.getElementById("lTemp").innerHTML = low;
     
     // let hTemp = storage.getItem("hTemp");
     // hTemp = convertToFahrenheit(hTemp);
