@@ -346,6 +346,7 @@ function getWeather(URL) {
              storage.setItem("windDirection", information.windDirection);
              storage.setItem("windSpeed", information.windSpeed);
              storage.setItem("elevation", elevation);
+             storage.setItem("icon", information.icon);
 
             // Build the page for viewing 
             buildPage();
@@ -422,6 +423,8 @@ function buildPage() {
 
     let feet = convertMeters(elevation);
 
+    let icon = storage.getItem("icon");
+    console.log("icon", icon);
     // Task 2 - Populate location information
     document.getElementById("locName").innerHTML = locName + ", " + locState;
     // Task 3 - Populate weather information
@@ -433,7 +436,7 @@ function buildPage() {
     document.getElementById("windSpeed"). innerHTML = speed;
     document.getElementById("windDirection").innerHTML = windDirection;
     document.getElementById("summary-heading").innerHTML = condition;
-
+    document.getElementById("image-weather").src = icon;
     
     // let hTemp = storage.getItem("hTemp");
     // hTemp = convertToFahrenheit(hTemp);

@@ -280,12 +280,17 @@ footer {
 
 
 
-@media only screen and (max-width: 500px) {}
+@media only screen and (max-width: 500px) {
+
+}
 
 /*Larger screen rules*/
 
 @media only screen and (min-width: 700px) {
-
+  #page-nav{
+    display: flex;
+    justify-content: space-around;
+  }
   /* Background pictures for summary */
   .clear {
     background-image: url("../../responsive_images/clear_300.jpg");
