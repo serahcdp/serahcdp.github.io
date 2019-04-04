@@ -82,6 +82,11 @@ hr{
 footer{
     text-align: center;
 }
+#prod-description img{
+width: 100%;
+
+}
+
 @media only screen and (min-width: 700px) {
     #banner {
         width: 100%;
@@ -92,6 +97,14 @@ footer{
         flex-direction: row-reverse;
         justify-content: space-around;
     }
+    #prod-description{
+        display:flex;
+    }
+    #prod-description img{
+        width: 20vw;
+        height: 20vw;
+        }
+        
 }
 
 #page-nav {

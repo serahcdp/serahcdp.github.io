@@ -19,11 +19,11 @@ function fetchData(acmeURL) {
             document.querySelector("body").addEventListener('click', function (navoption) {
                 var navOpt = navoption.target.closest('a');
                 if (navOpt !== null) {
-                    console.log(navOpt.textContent);
+                   
                     var home = false;
-                    //Anvils
+                    //Anvils-info
                     if (navOpt.textContent == "Anvils") {
-                        console.log(data.Anvils);
+                        
                         document.getElementById('category-name').innerHTML = data.Anvils.name;
                         document.getElementById('category-img').src = data.Anvils.path;
                         document.getElementById('description').innerHTML = data.Anvils.description;
@@ -31,6 +31,39 @@ function fetchData(acmeURL) {
                         document.getElementById('review').innerHTML = data.Anvils.reviews;
                         document.getElementById('price').innerHTML = data.Anvils.price;
                     }
+                     //Explosives-info
+                    else if (navOpt.textContent == "Explosives") {
+                        
+                        document.getElementById('category-name').innerHTML = data.Explosives.name;
+                        document.getElementById('category-img').src = data.Explosives.path;
+                        document.getElementById('description').innerHTML = data.Explosives.description;
+                        document.getElementById('made-by').innerHTML = data.Explosives.manufacturer;
+                        document.getElementById('review').innerHTML = data.Explosives.reviews;
+                        document.getElementById('price').innerHTML = data.Explosives.price;
+                    }
+                     //Decoys-info
+                     else if (navOpt.textContent == "Decoys") {
+                        
+                        document.getElementById('category-name').innerHTML = data.Decoys.name;
+                        document.getElementById('category-img').src = data.Decoys.path;
+                        document.getElementById('description').innerHTML = data.Decoys.description;
+                        document.getElementById('made-by').innerHTML = data.Decoys.manufacturer;
+                        document.getElementById('review').innerHTML = data.Decoys.reviews;
+                        document.getElementById('price').innerHTML = data.Decoys.price;
+                    }
+                     //Traps-info
+                     else if (navOpt.textContent == "Traps") {
+                        
+                        document.getElementById('category-name').innerHTML = data.Traps.name;
+                        document.getElementById('category-img').src = data.Traps.path;
+                        document.getElementById('description').innerHTML = data.Traps.description;
+                        document.getElementById('made-by').innerHTML = data.Traps.manufacturer;
+                        document.getElementById('review').innerHTML = data.Traps.reviews;
+                        document.getElementById('price').innerHTML = data.Traps.price;
+                    }
+
+
+
                     else {
                         home = true;
                     }
