@@ -1,10 +1,10 @@
 // Add 'use strict' directive at the top of the new file
 'use strict';
 
-let pageNav = document.getElementById('page-nav');
-let statusContainer = document.getElementById('status');
-let contentContainer = document.getElementById('page-content');
-
+let anvils = document.getElementById('anvils');
+let explosives = document.getElementById('explosives');
+let decoys = document.getElementById('decoys');
+let traps = document.getElementById('traps');
 
 // fetch function
 

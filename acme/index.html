@@ -10,27 +10,67 @@
 
   <link rel="stylesheet" type="text/css" href="css/screen.css">
 
+<style>
+  .hide{
+    display: none;
+  }
+</style>
 
 </head>
 
 <body background="images/site/background.jpg">
+
+
   <div id="white">
 
 
     <img id="logo" src="images/site/logo.png" alt="acmelogo">
 
 
-    <main>
 
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Anvils</li>
-          <li>Explosives</li>
-          <li>Decoys</li>
-          <li>Traps</li>
-        </ul>
-      </nav>
+
+    <nav id="page-nav">
+      <noscript id="noscript">Enable JavaScript for this site to function.</noscript>
+      <ul>
+        <li><a href="#" title="Home">Home</a></li>
+        <li><a href="#" title="Anvils">Anvils</a></li>
+        <li><a href="#" title="Explosives">Explosives</a></li>
+        <li><a href="#" title="Decoys">Decoys</a></li>
+        <li><a href="#" title="Traps">Traps</a></li>
+      </ul>
+    </nav>
+    <div id="category-info" class="hide">
+    
+      <h1 id="category-name">
+
+      </h1>
+      <div>
+        <img id="category-img" src="" alt="">
+
+      </div>
+      <div>
+
+        <p id="description">
+
+        </p>
+        <p id="made-by">
+
+        </p>
+        <p id="price">
+
+        </p>
+
+        <p id="review">
+
+        </p>
+
+
+
+
+      </div>
+
+    </div>
+    <main id="home-content">
 
       <h1>Welcome to Acme!</h1>
       <div id="top">
@@ -49,33 +89,67 @@
 
 
 
-    
+      <div id="bottom-part">
+        <div>
+          <h2>Acme Rocket Reviews</h2>
+          <ul>
+            <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+            <li>"That thing was fast!" (4/5)</li>
+            <li>"Talk about fast delivery." (5/5)</li>
+            <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+            <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+          </ul>
+        </div>
+        <div>
 
-      <h2>Acme Rocket Reviews</h2>
-      <ul>
-        <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
-        <li>"That thing was fast!" (4/5)</li>
-        <li>"Talk about fast delivery." (5/5)</li>
-        <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
-        <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
-      </ul>
-      
-      <h2>Featured Recipes</h2>
-      <ul id=tile>
-       <li><img src= "images/recipes/bbqsand.jpg" ><br> Pulled Roadrunner BBQ </li>
-       <li><img src= "images/recipes/potpie.jpg" ><br> Roadrunner Pot Pie</li>
-       <li><img src= "images/recipes/soup.jpg" ><br> Roadrunner Soup </li>
-       <li><img src= "images/recipes/taco.jpg" ><br> Roadrunner Tacos</li></ul>
-        
 
-     
+          <h2>Featured Recipes</h2>
+          <table>
+            <tr>
+              <th><img src="images/recipes/bbqsand.jpg"></th>
+              <th><img src="images/recipes/potpie.jpg"></th>
 
+            </tr>
+            <tr>
+              <td>
+                <a href="#"> Pulled Roadrunner BBQ </a> &nbsp;
+              </td>
+              <td>
+                <a href="#">Roadrunner Pot Pie</a>
+              </td>
+
+            </tr>
+            <tr>
+              <th><img src="images/recipes/soup.jpg"></th>
+              <th><img src="images/recipes/taco.jpg"></th>
+
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Roadrunner Soup</a>
+              </td>
+              <td>
+                <a href="#"> Roadrunner Tacos</a>
+              </td>
+
+            </tr>
+
+
+          </table>
+
+        </div>
+      </div>
 
     </main>
     <footer>
-      <p>&copy; Serah, 3/26/2019</p>
+      <hr>
+      <p>&copy; 2019 ACME Inc., All right reserved<br> All images used are belived to be in 'Fair Use'. Please notify
+        author if any are not and they will be removed.</p>
     </footer>
+    </main>
   </div>
+  <script src="js/acme.js"> </script>
+
 </body>
 
 </html>

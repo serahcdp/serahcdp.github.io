@@ -1,67 +1,132 @@
-nav{
+/* nav {
     background-color: #de2226;
-    }
-
-    #top{
-        color: rgb(153, 0, 51);
-       position: relative
-    }
-
-#banner{
-    width: 100%;
-    height: 300px;
 }
 
-#acmerocket{
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #de2226;
+    padding: 11px;
+} */
+
+#top {
+    color: rgb(153, 0, 51);
+    position: relative
+}
+
+#banner {
+    width: 100%;
+    height: 200px;
+}
+
+#acmerocket {
     position: absolute;
     top: 0px;
     right: 25px;
 }
 
-    #purple{
-        color: #990033;
+#purple {
+    color: #990033;
+}
+
+#recipe {
+    color: #0000ee;
+}
+
+h2 {
+    color: #000000;
+}
+
+nav ul {
+    color: #ffffff;
+}
+
+#white {
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+table th {
+    background-color: #808080;
+    border-collapse: collapse;
+}
+#acmerocket{
+    font-size: 2vw;
+}
+#actionbtn{
+    font-size: 4vw;
+    width: 3em;
+}
+
+hr{
+    width: 98%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #000000;
+}
+footer{
+    text-align: center;
+}
+@media only screen and (min-width: 700px) {
+    #banner {
+        width: 100%;
+        height: 340px;
     }
-    #recipe{
-        color:#0000ee;
+    #bottom-part {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
     }
+}
 
-    h2{
-        color: #000000;
-    }
+#page-nav {
+    background-color: #de2226;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
-    nav ul{
-        color:#ffffff;
-    }
+#page-nav ul {
+    display: flex;
+    align-items: stretch;
+    height: 2.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    #white
-    {
-        width: 85%;
-        margin: 0 auto;
-        background-color: white;
-    }
+#page-nav li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
-    @media only screen and (min-width: 700px) {
-        nav{
-          display: flex;
-          justify-content: space-around;
-        }
+#page-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
 
-        nav ul li {
-            display: inline-block;
-            list-style: none;
-          }
+#page-nav a:hover {
+    background-color: #ffffff;
+    color: #000;
 
-          nav li  {
-            display: block;
-            width: 100px;
-            padding: 10px;
-            float: left;
-          }
-
-          nav {
-            position: relative;
-        
-          }
-
-          
-  
+}
