@@ -18,7 +18,7 @@ function fetchData(acmeURL) {
             console.log(data);
             document.querySelector("body").addEventListener('click', function (navoption) {
                 var navOpt = navoption.target.closest('a');
-                if (anchor !== null) {
+                if (navOpt !== null) {
                     console.log(navOpt.textContent);
                     var home = false;
                     //Anvils
