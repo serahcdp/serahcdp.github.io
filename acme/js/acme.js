@@ -9,7 +9,6 @@ function fetchData(acmeURL) {
         .then(function (response) {
             if (response.ok) {
                 var result = response.json();
-                console.log('result', result);
                 return result;
             }
             throw new ERROR('Network response was not OK.');
