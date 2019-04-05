@@ -91,6 +91,7 @@ width: 100%;
     color: #de2226;
     font-size: 3vw;
 }
+/* Small Screen */
 @media only screen and (min-width: 700px) {
     #banner {
         width: 100%;
@@ -110,7 +111,7 @@ width: 100%;
         }
         
 }
-
+/* General Rules */
 #page-nav {
     background-color: #de2226;
     bottom: 0;
@@ -146,4 +147,7 @@ width: 100%;
     background-color: #ffffff;
     color: #000;
 
+}
+#background{
+    background-image:"images/site/background.jpg"
 }
