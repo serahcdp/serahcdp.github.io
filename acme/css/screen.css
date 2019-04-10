@@ -23,6 +23,27 @@ nav a:hover {
     padding: 11px;
 } */
 
+/* Small Screen */
+@media only screen and (min-width: 700px) {
+    #banner {
+        width: 100%;
+        height: 340px;
+    }
+    #bottom-part {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    #prod-description{
+        display:flex;
+    }
+    #prod-description img{
+        width: 20vw;
+        height: 20vw;
+        }
+        
+}
+/* Large Screen */
 #top {
     color: rgb(153, 0, 51);
     position: relative
@@ -66,7 +87,7 @@ table th {
     border-collapse: collapse;
 }
 #acmerocket{
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 #actionbtn{
     font-size: 4vw;
@@ -91,26 +112,7 @@ width: 100%;
     color: #de2226;
     font-size: 3vw;
 }
-/* Small Screen */
-@media only screen and (min-width: 700px) {
-    #banner {
-        width: 100%;
-        height: 340px;
-    }
-    #bottom-part {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
-    #prod-description{
-        display:flex;
-    }
-    #prod-description img{
-        width: 20vw;
-        height: 20vw;
-        }
-        
-}
+
 /* General Rules */
 #page-nav {
     background-color: #de2226;
@@ -149,5 +151,9 @@ width: 100%;
 
 }
 #background{
-    background-image:"images/site/background.jpg"
+    /* background-image:"images/site/background.jpg" */
+    background-image: url(../images/site/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 }

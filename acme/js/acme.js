@@ -1,7 +1,7 @@
 'use strict';
 let categoryInfo = document.getElementById('category-info');
 let homeInfo = document.getElementById('home-content');
-/*************************JSON************************************* */
+/*****JSON******/
 let acmeURL = "/acme/js/acme.json";
 fetchData(acmeURL);
 function fetchData(acmeURL) {
@@ -22,6 +22,7 @@ function fetchData(acmeURL) {
                     var home = false;
                     //Anvils-info
                     if (navOpt.textContent == "Anvils") {
+                       
                         
                         document.getElementById('category-name').innerHTML = data.Anvils.name;
                         document.getElementById('category-img').src = data.Anvils.path;
@@ -32,6 +33,7 @@ function fetchData(acmeURL) {
                     }
                      //Explosives-info
                     else if (navOpt.textContent == "Explosives") {
+                        
                         
                         document.getElementById('category-name').innerHTML = data.Explosives.name;
                         document.getElementById('category-img').src = data.Explosives.path;
